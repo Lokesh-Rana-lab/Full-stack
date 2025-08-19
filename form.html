@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Form</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Your name" required><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="you@example.com" required><br /><br />
+
+    <label for="contact">Contact (phone):</label><br />
+    <input type="tel" id="contact" name="contact" placeholder="+91 98765 43210" pattern="[0-9+\-\s]{7,}" required><br /><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" minlength="6" required><br /><br />
+
+    <label for="age">Age:</label><br />
+    <input type="number" id="age" name="age" min="1" max="120"><br /><br />
+
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>Hobbies</legend>
+      <input type="checkbox" id="hobby-read" name="hobbies" value="reading">
+      <label for="hobby-read">Reading</label>
+
+      <input type="checkbox" id="hobby-sport" name="hobbies" value="sports">
+      <label for="hobby-sport">Sports</label>
+
+      <input type="checkbox" id="hobby-music" name="hobbies" value="music">
+      <label for="hobby-music">Music</label>
+    </fieldset>
+    <br />
+
+    <label for="bio">Bio:</label><br />
+    <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
